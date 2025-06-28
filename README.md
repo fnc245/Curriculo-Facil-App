@@ -35,10 +35,6 @@ Este projeto foi desenvolvido com uma arquitetura modular em Python, utilizando 
 - **Instalador para Windows:** Distribuído como um `.exe` com um instalador profissional criado com Inno Setup para uma experiência de usuário familiar.
 - **Sessões no Lado do Servidor:** Utiliza `Flask-Session` para armazenar o histórico da conversa no servidor, permitindo chats longos e complexos sem os limites de tamanho de cookies.
 
-### Demonstração
-*(Opcional: Se você gravar um pequeno vídeo ou GIF mostrando a aplicação em funcionamento, pode adicioná-lo aqui. É uma ótima maneira de demonstrar o projeto.)*
-`[Link para o vídeo ou GIF aqui]`
-
 ### Tecnologias Utilizadas
 - **Backend:** Python, Flask, Flask-Session
 - **IA:** Google Gemini API (`google-generativeai`)
