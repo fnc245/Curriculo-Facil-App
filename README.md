@@ -20,6 +20,16 @@ Assistente inteligente para criação de currículos profissionais, potencializa
 9. [Contato](#contato)
 
 ---
+---
+
+### Acesso Rápido / Demonstração Online
+
+Você pode ver mais detalhes sobre o projeto com uma demonstração ao acessar a página com o link abaixo:
+
+**[www.idx.com.br/curriculo_facil.html](https://www.idx.com.br/curriculo_facil.html)**
+
+---
+
 
 ### Descrição do Projeto
 O **Currículo Fácil** é uma aplicação de desktop para Windows que oferece uma interface de chat para ajudar usuários a criarem currículos de forma rápida e intuitiva. A aplicação utiliza um modelo de linguagem avançado (Google Gemini) para coletar as informações do usuário em uma conversa natural e, ao final, gera um arquivo HTML bem formatado e pronto para ser impresso ou compartilhado.
