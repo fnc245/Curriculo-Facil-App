@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Francisco Neves</title>
+    <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            font-family: 'Numans', sans-serif;
+            line-height: 1.45;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-size: 10.5pt;
+        }
+        .container {
+            width: 80%;
+            max-width: 880px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px 35px;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.9em;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+        .contact-info-placeholder {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+        }
+        .contact-info-placeholder p {
+            margin: 3px 0;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 6px;
+        }
+        h3 { /* Mantido caso queira usar para subseções dentro do [TEXTO AQUI] */
+            font-size: 1.2em;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 4px;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+        ul { /* Mantido caso queira usar listas dentro do [TEXTO AQUI] */
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+        li { /* Mantido caso queira usar listas dentro do [TEXTO AQUI] */
+            margin-bottom: 6px;
+            color: #495057;
+            text-align: justify;
+        }
+        li strong {
+            color: #343a40;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+
+        /* Media query para impressão */
+        @media print {
+            body {
+                background-color: #fff !important;
+                font-size: 10pt;
+                line-height: 1.4;
+            }
+            .container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                border: none;
+                box-shadow: none;
+                padding: 15px 20px;
+            }
+            p, li {
+                 text-align: justify;
+            }
+            .contact-info-placeholder p {
+                 text-align: center;
+            }
+            h2 {
+                margin-top: 15px; margin-bottom: 8px; padding-bottom: 5px;
+            }
+            h3 {
+                margin-top: 10px; margin-bottom: 5px; padding-bottom: 3px;
+            }
+            p {
+                margin-bottom: 6px;
+            }
+            li {
+                margin-bottom: 4px;
+            }
+            ul {
+                margin-bottom: 6px;
+            }
+            .section {
+                margin-bottom: 15px;
+            }
+            .contact-info-placeholder { margin-bottom: 15px; }
+
+            .section { /* Tentar evitar quebra de página dentro de uma seção simples */
+                page-break-inside: avoid;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currículo - Francisco Neves</h1>
+        <div class="contact-info-placeholder">
+            <p>61981868320 | fnc245@gmail.com</p>
+        </div>
+
+        <div class="section">
+            <h2>Objetivo</h2>
+            <p>Procuro uma vaga como auxiliar geral onde eu possa aprender e me dedicar ao máximo para alcançar os resultados da equipe.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experiência</h2>
+            <p>Ajudante de Cozinha: Auxílio no preparo de alimentos, organização e limpeza da cozinha.</p>
+        </div>
+
+        <div class="section">
+            <h2>Escolaridade</h2>
+            <p>Ensino Fundamental Incompleto - Cursando o ensino fundamental - EJA</p>
+        </div>
+
+        <div class="section">
+            <h2>Cursos</h2>
+            <p>Informática: Word e Excel (Básico)</p>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <p>Boa comunicação, Organização, Disposição para aprender</p>
+        </div>
+        <div class="veracity-statement-section" style="margin-top: 30px; text-align: center; font-size: 0.9em; color: #555;">
+         <p style="margin-bottom: 5px;"><strong>Francisco Neves</strong></p>
+         <p><em>Declaro que todas as informações contidas neste currículo são verdadeiras e de minha inteira responsabilidade.</em></p>
+        </div>
+    </div>
+</body>
+</html>

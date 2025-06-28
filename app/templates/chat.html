@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Currículo Fácil 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <header class="chat-header">
+            <div>Assistente Currículo Fácil - Versão 2.0</div>
+        </header>
+        <main id="chat-history-container" class="chat-history"></main>
+        <footer class="chat-footer">
+            <form id="prompt-form" class="prompt-form">
+                <textarea id="prompt-input" placeholder="Digite sua mensagem aqui..." required></textarea>
+                <button type="submit" id="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.10/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+        // A variável LOCAL_IP_URL foi removida.
+        const NEEDS_API_KEY = {{ needs_api_key|tojson }};
+    </script>
+
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>

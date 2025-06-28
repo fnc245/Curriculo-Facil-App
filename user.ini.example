@@ -1,0 +1,6 @@
+; user_config.ini.example
+; Exemplo de arquivo de configuração do usuário.
+; A aplicação criará o arquivo 'user_config.ini' automaticamente.
+; Você pode adicionar a seção [Settings] manualmente para definir um modelo Gemini específico.
+[Settings]
+ModelName = gemini-2.0-flash

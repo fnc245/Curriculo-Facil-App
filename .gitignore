@@ -1,0 +1,28 @@
+# Arquivo .gitignore para o projeto Currículo Fácil
+
+# Arquivos de ambiente Python
+.venv/
+venv/
+*.pyc
+__pycache__/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos de configuração sensíveis e de usuário
+.env
+user_config.ini
+*.db
+*.db-journal
+
+# Arquivos gerados pelo PyInstaller e Inno Setup
+/dist/
+/build/
+*.spec
+/Output/
+
+# Arquivos de IDE
+.idea/
+.vscode/
+
+# Logs da aplicação (se você criar algum)
+*.log

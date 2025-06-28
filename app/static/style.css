@@ -1,0 +1,341 @@
+/* Estilos Globais */
+body {
+    font-family: 'Numans', sans-serif; /* Fonte Principal */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 13px; /* Reduzido de 16px ou 10.5pt */
+}
+
+h1, h2, h3 {
+    font-family: 'Numans', sans-serif; /* Fonte Principal para títulos */
+    color: #2c3e50;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+textarea {
+    font-family: 'Numans', sans-serif; /* Fonte Principal para inputs e botões */
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 12px; /* Ligeiramente reduzido */
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 0.95em; /* Ajustado para nova base */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Container de Login (mantido para referência, mas não usado no chat atual) */
+.login-container {
+    background-color: white;
+    padding: 25px 35px; /* Ligeiramente reduzido */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 380px; /* Ligeiramente reduzido */
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Reduzido de 2.2em */
+}
+
+.input-group {
+    margin-bottom: 18px; /* Ligeiramente reduzido */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.95em; /* Ajustado */
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 20px); /* Ajustado padding */
+    padding: 10px 9px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95em; /* Ajustado */
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Ligeiramente reduzido */
+    font-size: 1em; /* Ajustado */
+    background-color: #2ecc71;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+.feedback {
+    margin-top: 18px;
+    padding: 8px; /* Ligeiramente reduzido */
+    border-radius: 4px;
+    font-size: 0.85em; /* Reduzido */
+    min-height: 1.1em;
+}
+
+.feedback.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.feedback.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+
+/* Estrutura do Chat */
+.chat-wrapper {
+    width: 100%;
+    max-width: 750px; /* Ligeiramente reduzido */
+    height: 90vh;
+    max-height: 650px; /* Ligeiramente reduzido */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Cabeçalho do Chat */
+.chat-header {
+    background-color: #34495e;
+    color: white;
+    padding: 12px 18px; /* Ligeiramente reduzido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.chat-header div { /* Para o título como "Assistente Currículo Fácil" */
+    font-size: 1.05em; /* Ajustado em relação ao novo body (13px * 1.05 ~= 13.65px) */
+    font-weight: normal;
+}
+
+.chat-header .header-buttons button { /* Se o botão de sair for reintroduzido */
+    background-color: #e74c3c;
+    margin-left: 8px;
+    font-size: 0.9em; /* Ajustado */
+    padding: 7px 10px; /* Ajustado */
+}
+.chat-header .header-buttons button:hover {
+    background-color: #c0392b;
+}
+
+/* Histórico de Mensagens */
+.chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 18px; /* Ligeiramente reduzido */
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 75%;
+    margin-bottom: 12px; /* Ligeiramente reduzido */
+    padding: 8px 13px; /* Ligeiramente reduzido */
+    border-radius: 16px; /* Ligeiramente reduzido */
+    line-height: 1.35; /* Reduzido */
+    word-wrap: break-word;
+    /* font-size herda do body (13px), que já é menor */
+}
+
+.message p {
+    margin: 0;
+    /* font-size não precisa ser definido aqui se 13px do body for ok */
+}
+
+.message p pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px; /* Ligeiramente reduzido */
+    border-radius: 4px; /* Ligeiramente reduzido */
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em; /* Relativo ao font-size do .message p (que é 13px) ~= 11.7px */
+}
+.message p code {
+    background-color: #e0e0e0;
+    padding: 1px 3px; /* Ligeiramente reduzido */
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em; /* Relativo ao font-size do .message p ~= 11.7px */
+}
+.message p table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 8px 0; /* Ligeiramente reduzido */
+    font-size: 0.85em; /* Reduzido */
+}
+.message p th, .message p td {
+    border: 1px solid #bdc3c7;
+    padding: 6px; /* Ligeiramente reduzido */
+    text-align: left;
+}
+.message p th {
+    background-color: #dde1e2;
+}
+.message p ul, .message p ol {
+    padding-left: 18px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.message p li {
+    margin-bottom: 2px;
+}
+
+
+.user-message {
+    background-color: #3498db;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.assistant-message {
+    background-color: #ffffff;
+    color: #333;
+    align-self: flex-start;
+    border: 1px solid #dfe6e9;
+    border-bottom-left-radius: 5px;
+}
+
+/* Rodapé do Chat (Formulário de Prompt) */
+.chat-footer {
+    padding: 12px 18px; /* Ligeiramente reduzido */
+    background-color: #ffffff;
+    border-top: 1px solid #bdc3c7;
+}
+
+.prompt-form {
+    display: flex;
+    align-items: center;
+}
+
+#prompt-input { /* Textarea */
+    flex-grow: 1;
+    padding: 10px 13px; /* Ligeiramente reduzido */
+    border: 1px solid #ccc;
+    border-radius: 18px; /* Ligeiramente reduzido */
+    margin-right: 8px; /* Ligeiramente reduzido */
+    font-size: 1em; /* Herda do body (13px) */
+    resize: none;
+    min-height: 22px; /* Ajustado para nova fonte */
+    max-height: 100px; /* Ajustado para nova fonte */
+    overflow-y: auto;
+    line-height: 1.3; /* Reduzido */
+}
+
+#send-button {
+    background-color: #2ecc71;
+    border-radius: 50%;
+    width: 44px; /* Ligeiramente reduzido */
+    height: 44px; /* Ligeiramente reduzido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#send-button:hover {
+    background-color: #27ae60;
+}
+#send-button svg {
+    fill: white;
+    width: 22px; /* Ligeiramente reduzido */
+    height: 22px; /* Ligeiramente reduzido */
+}
+
+/* Scrollbar customizada para o histórico (Webkit) */
+.chat-history::-webkit-scrollbar {
+    width: 7px; /* Ligeiramente reduzido */
+}
+.chat-history::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.chat-history::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 10px;
+}
+.chat-history::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        padding-top: 0;
+        font-size: 12.5px; /* Ainda menor em mobile se necessário */
+    }
+    .chat-wrapper {
+        height: 100vh;
+        max-height: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .login-container {
+        width: auto;
+        margin: 15px; /* Reduzido */
+        padding: 20px; /* Reduzido */
+        box-shadow: none;
+    }
+    .message {
+        max-width: 90%;
+        padding: 7px 11px; /* Reduzido para mobile */
+        margin-bottom: 10px; /* Reduzido para mobile */
+    }
+    .chat-header div {
+        font-size: 1em; /* Ajuste para mobile */
+    }
+    .chat-footer {
+        padding: 8px 12px;
+    }
+    #prompt-input {
+        padding: 8px 10px;
+        min-height: 20px;
+        max-height: 80px;
+    }
+    #send-button {
+        width: 40px;
+        height: 40px;
+    }
+    #send-button svg {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Francisco Neves</title>
+    <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #4a4a4a;
+            --bg-color: #f4f7f6;
+        }
+        body {
+            font-family: 'Numans', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 11pt;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px 50px;
+            border-top: 5px solid var(--secondary-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .print-button-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .print-button {
+            padding: 10px 20px;
+            font-family: 'Numans', sans-serif;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .print-button:hover {
+            background-color: #2980b9;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            color: #666;
+        }
+        .contact-info p {
+            margin: 4px 0;
+        }
+        h2 {
+            font-size: 1.3em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p, li {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .veracity-statement {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .veracity-statement p {
+            text-align: center;
+        }
+        .veracity-statement .candidate-name {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: #fff !important;
+                font-size: 10pt;
+            }
+            .print-button-wrapper {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                border-top: 5px solid #3498db;
+                margin: 0;
+                max-width: 100%;
+                padding: 20px;
+            }
+            h2 {
+                color: #2c3e50;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="print-button-wrapper">
+        <button class="print-button" onclick="window.print()">Imprimir Currículo</button>
+    </div>
+
+    <div class="container">
+        <h1>Francisco Neves</h1>
+        
+        <div class="contact-info">
+            <p>Aguas claras brasilia</p>
+            <p>Telefone: 61981868320 | E-mail: fnc@idx.com.br</p>
+        </div>
+
+        <div class="section">
+            <h2>Objetivo</h2>
+            <p>Busco oportunidade como Auxiliar de Limpeza, onde possa aplicar minhas habilidades e dedicação para manter ambientes limpos e organizados.</p>
+        </div>
+
+        <div class="section">
+            <h2>Resumo das Qualificações</h2>
+             <ul>
+                <li>Habilidade em carpintaria e pequenos reparos.</li>
+                <li>Conhecimentos em informática básica.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experiência Profissional</h2>
+            <p>Experiência em limpeza e organização de ambientes domésticos, garantindo a higiene e o bem-estar de todos.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Escolaridade</h2>
+            <p>Ensino Fundamental Incompleto</p>
+        </div>
+
+        <div class="veracity-statement">
+            <p class="candidate-name">Francisco Neves</p>
+            <p><em>Declaro que todas as informações aqui apresentadas são verdadeiras.</em></p>
+        </div>
+    </div>
+</body>
+</html>
