@@ -11,7 +11,7 @@ Assistente inteligente para criação de currículos profissionais, potencializa
 ### Tabela de Conteúdos
 1. [Descrição do Projeto](#descrição-do-projeto)
 2. [Features Principais](#features-principais)
-3. [Demonstração em Vídeo (Opcional)](#demonstração)
+3. [Demonstração em Vídeo - Em Breve](#demonstração)
 4. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 5. [Como Instalar (Usuário Final)](#como-instalar-usuário-final)
 6. [Como Executar (Desenvolvedores)](#como-executar-desenvolvedores)
